@@ -1,0 +1,130 @@
+body{
+overflow: auto;
+
+}
+
+
+
+
+/* Nav*/
+.navbar {
+position: fixed;
+top:0;
+left:0;
+width: 100%;
+background:lightblue ;
+color: aliceblue    ;
+text-align: center;
+padding: 12px;
+font-size: 1em;
+/* 1em=16px */
+
+}
+
+/* Float */
+.container {
+margin: 60 px auto;
+width: 80%;
+display: flex;
+justify-content: space-between;
+background:grey;
+}
+
+/* element flotant */
+
+img{
+float:right;
+
+}
+
+/* Hover */
+.hover-box{
+width: 120px;
+height: 120px;
+background: lightblue;
+border: red 1px dashed;
+border-radius: 30% 30% 30% 30%;
+
+}
+.hover-box:hover{
+    background-color: red;
+    scale: 1.5;
+    border: black(0,0,0) 1px dashed;
+
+}
+
+/* Animation/transform */
+
+
+.animation-box{
+    margin-top: 22px;
+    width: 120px;
+    height: 120px;
+    background: lightblue;
+    border: black(0,0,0) 1px dashed;
+    border-radius: 50% ;
+    transition: background-color 0,
+    3.0s , transform 0.3s ease ;
+}
+
+.animation-box:hover {
+    transform: rotate(270deg);
+    background-color: blue;
+}
+
+/* Le Flexbox */
+.flex-container{
+    background-color: black;
+    color: yellow;
+    padding: 3%;
+    display: flex;
+    flex:1;
+    justify-content: space-evenly;
+    width: 30%;
+    margin: auto;
+}
+
+.flex-contain{
+    background-color: orange;
+}
+
+.flex-item2,.flex-item1,.flex-item3{
+    background-color: green;
+}
+
+/* Grid box */
+
+.grid-container{
+
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    gap: 10px;
+    background-color: aquamarine
+    ;
+}
+
+.grid-item{
+    
+    background: red;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+
+}
+
+.h1:hover{
+    color:yellow;
+    font-family: Tahoma,sans-serif;
+}
+
+
+@media screen and (max-width:800px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+
+
+    }
+
+}
+
