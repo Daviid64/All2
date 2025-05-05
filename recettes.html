@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil</title>
+    <title>Recette</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <!-- Début du Header -->
 <header>
-    <div class="resto">
-    <img src="./Img/Sans titre.png" alt="" class= "resto0"></div>
+    <img src="./Img/Sans titre.png" alt="">
     <nav>
         <ul>
             <li><a href="index.html">Acceuil</a></li>
@@ -29,10 +28,15 @@
 <p>Découvrez nos recettes</p>
 </section>
 
-
+<section class ="hero">
+    <h2>Bienvenue sur notre site</h2>
+    <p>Découvrez nos recettes</p>
+    </section>
     <section class ="vedette">
         <h3>Recette en Vedette</h3>
-       <div class="recette-grid" id="recette-container"></div>
+       <div class="recette-grid" id="recette-container">
+        <p></p>
+       </div>
        <!-- Ici nous allons injecter nos recettes a partir de javascript -->
     </section>
 </main>
@@ -46,7 +50,6 @@
 <footer><p>&copy:2023 All rights reserved</p></footer>
 
 <!-- Fin du Footer -->
-    <script src = "recettes.js"></script>
     <script src = "script.js"></script>
 </body>
 </html>
