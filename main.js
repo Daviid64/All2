@@ -1,13 +1,18 @@
-// Le main.js sera le porteur de tout mes modules 
+//Le main.js sera porteur de tout nos modules 
+import {createCard,bgDark} from "./script.js";
 
-import createTitle from "./title.js";
-import createNavbar from "./navbar.js";
 
-//On appelle cette fonction pour créer le titre 
-const title = createTitle("La valeur de titre")
+//On vérifie l'URL de la page
+const path=location.pathname
 
-const navbar = createNavbar()
-//On va l'ajouter au corp du document
-document.body.appendChild(title)
-document.body.prepend(navbar)
+//On affiche la card juste dans le cas ou la (endsWith) la fin de l'url est index.html ou (||) est strictement égale a "/" 
+if (path.endsWith("index.html") || path === "/"){
+const card = createCard()
+document.body.prepend(card)
+}
+
+const bgDarc= bgDark()
+//On ajoute au corp de l'élément 
+document.body.prepend(bgDarc)
+document.body.appendChild(card);
 
